@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Marco</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto_propia.png" alt="">
+            </div>
+            <h1>MARCO ANTONIO SOLIS MENDOZA</h1>
+            <H2>Desarollador web font-end en proceso</H2>
+            <div class="redes">
+                <a href="https://www.facebook.com/marcosolis2209" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/deteor2209" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/marco-solis2209/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@poesiadiaria" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola! Soy Marco Antonio Solis Mendoza</span>, un mexicano de 30 años que se encuentra inmerso en el mundo del desarrollo web. Actualmente, estoy emocionado por estar estudiando una certificación en desarrollo web enfocada en front-end, impartida por Alura y Oracle.</p>
+
+            <p>Durante mi trayectoria laboral, he tenido el privilegio de trabajar con empresas reconocidas como Appen S.L., Lionbridge Technologies, Inc. y Babelcube, desempeñando roles clave como analista de contenido digital, transcriptor y traductor. Estas experiencias me han permitido adquirir un valioso conocimiento sobre la gestión y análisis de contenido digital, así como también habilidades sólidas en traducción.</p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            22-09-1992
+                        </li>
+                        <li>
+                            <strong>Whatsapp</strong>
+                            (+52) 55 5907 2548
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            deadman.deteor2209@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>ESCUCHAR MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>VER PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>ESTUDIAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-wand-magic"></i>
+                            <span>TRUCOS CON CARTAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bowl-food"></i>
+                            <span>COCINAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                DESCARGAR CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Testing</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Enfoque</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarollo web enfocado en Front-End</h4>
+                        <span class="casa">Aula - Oracle ONE</span>
+                        <span class="fecha">En curso</span>
+                        <p>En este curso intensivo, desarrollado en colaboración con Alura y Oracle, estoy adquiriendo habilidades fundamentales en programación front-end. A través de una combinación de teoría y práctica, estoy aprendiendo a crear experiencias de usuario dinámicas y atractivas utilizando tecnologías como HTML, CSS y JavaScript. Además, exploré los conceptos clave del desarrollo web moderno, como la creación de interfaces responsivas y la optimización del rendimiento del sitio.</p> 
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curador de datos</h4>
+                        <span class="casa">Capacitate para el empleo</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Durante esta formación especializada, avalada por Capacítate para el Empleo y Fundación Carlos Slim, adquirí conocimientos y habilidades en el manejo de datos para garantizar su calidad, integridad y fiabilidad.</p> 
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tester</h4>
+                        <span class="casa">Capacitate para el empleo</span>
+                        <span class="fecha">2016 - 2017 </span>
+                        <p>Mediante esta capacitación intensiva, respaldada por Capacítate para el Empleo y Fundación Carlos Slim, adquirí conocimientos y habilidades fundamentales para realizar pruebas de calidad y aseguramiento de software.</p> 
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en seguridad informática - Análisis de riesgos</h4>
+                        <span class="casa">Capacitate para el empleo</span>
+                        <span class="fecha">2017 - 2018 </span>
+                        <p>Durante esta formación, avalado por Capacítate para el Empleo y la Fundación Carlos Slim, adquirí conocimientos y habilidades fundamentales para identificar y mitigar las amenazas y vulnerabilidades en entornos de seguridad informática.</p> 
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Analista de Contenido Digital</h4>
+                        <span class="casa">Appen S.L.</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Como Analista de Contenido Digital en Appen S.L., era responsable de analizar y evaluar la calidad, relevancia y precisión del contenido en línea. Mi rol implicaba trabajar con una amplia variedad de datos y materiales digitales para garantizar que cumplan con los estándares establecidos.</p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Recolector de datos digitales</h4>
+                        <span class="casa">Appen S.L.</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>En mi rol como Recolector de Datos Digitales en Appen S.L., soy responsable de recopilar información y datos relevantes en línea. Trabajo en proyectos específicos donde se requiere recolectar datos de diferentes fuentes digitales.</p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Transcriptor</h4>
+                        <span class="casa">Lionbridge Technologies, Inc.</span>
+                        <span class="fecha">2018 - 2018</span>
+                        <p>Como Transcriptor en Lionbridge Technologies, Inc., mi función principal es convertir audio y video en texto escrito de manera precisa y eficiente. </p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Traductor</h4>
+                        <span class="casa">Babelcube</span>
+                        <span class="fecha">2018 - 2018</span>
+                        <p>Como Traductor de inglés a español en Babelcube, soy responsable de realizar traducciones precisas y de alta calidad en diversos proyectos editoriales.  </p> 
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Encriptador de Texto</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTATO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Whatsapp: (+52) 55 5907 5248
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: deadman.deteor2209@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/marcosolis2209" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/deteor2209" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/marco-solis2209/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@poesiadiaria" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
