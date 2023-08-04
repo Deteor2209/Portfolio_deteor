@@ -507,7 +507,7 @@ html{
     margin: auto;
 }
 .contacto h2{
-    font-size: 48px;
+    font-size: 60px;
     font-family: 'Bebas Neue';
     text-align: center;
     padding: 20px 0;
@@ -528,7 +528,7 @@ html{
     margin-bottom: 20px;
     background-color: #252A2E;
     color: #fff;
-    font-size: 18px;
+    font-size: 50px;
 }
 .contacto button{
     cursor: pointer;
